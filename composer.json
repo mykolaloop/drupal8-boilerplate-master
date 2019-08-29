@@ -52,7 +52,9 @@
         "d3/d3": "4.12.*",
         "components/highlightjs": "9.12.*",
         "drupal/search_api_solr": "^3.4",
-        "drupal/facets": "^1.4"
+        "drupal/facets": "^1.4",
+        "drupal/panelizer": "^4.1",
+        "drupal/image_effects": "^2.3"
     },
     "require-dev": {
         "drush/drush": "^9.0",
