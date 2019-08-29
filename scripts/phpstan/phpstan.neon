@@ -1,0 +1,14 @@
+parameters:
+  bootstrap: %currentWorkingDirectory%/scripts/phpstan/bootstrap.php
+  tmpDir: %currentWorkingDirectory%/scripts/phpstan/tmp
+  fileExtensions:
+    - php
+    - module
+    - inc
+  ignoreErrors:
+    - '#Function [a-zA-Z0-9\\_]+ not found.#'
+    - '#Drupal\\Core\\Entity\\Query\\QueryInterface::range\(\) expects null#'
+    - '#Drupal\\Core\\Field\\FieldItemListInterface::view\(\) expects array, string given.#'
+includes:
+	- ../../vendor/mglaman/phpstan-drupal/extension.neon
+	- ../../vendor/phpstan/phpstan-deprecation-rules/rules.neon
